@@ -1,5 +1,5 @@
 const header = document.querySelector('.main-header')
-const sectionOne = document.querySelector('.home-intro')
+
 
 console.log(header);
 function headerChange(e) {
