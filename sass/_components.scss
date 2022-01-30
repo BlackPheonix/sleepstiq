@@ -1,0 +1,35 @@
+@import './variables';
+
+
+.btn {
+    display: inline-block;
+    padding: 0.65em 3em;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    background: hsl(var(--secondary-clr-300));
+    color: hsl(var(--neutral-clr-300));
+
+    &:hover {
+        background: rgb(43, 43, 43);
+    }
+}
+
+.btn-transparent{
+    @extend .btn;
+    background: transparent;
+    color: hsl(var(--primary-clr-300));
+    padding-inline: 0;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: all .5 ease;
+
+    &:hover {
+       text-decoration: none;
+       background: transparent;
+    }
+
+}

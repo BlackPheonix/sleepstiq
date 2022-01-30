@@ -1,0 +1,55 @@
+@import './variables';
+
+
+// General styles
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {  
+    line-height: 1.5;
+    font-size: var(--fs-00);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: hsl(var(--primary-clr-300));
+    background: hsl(var(--neutral-clr-300));   
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+ul[role="list"] {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+input, 
+textarea,
+select {
+    color: unset;
+    font: unset;
+}

@@ -1,0 +1,25 @@
+.container {
+    max-width: 75rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap, 1rem);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap, 1rem);
+}
+
+.flow-content > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.section-py {
+    padding-block: 5rem;
+}

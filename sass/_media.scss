@@ -1,0 +1,240 @@
+
+
+@media(max-width: 35em) {
+
+    .main-header {
+      
+
+        .container {
+            --gap: 1rem;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+
+}
+
+
+
+@media(min-width: 48em) {
+
+    ///////////////// HOme Section
+
+    .home-intro {
+        margin-right: 4rem;
+        margin-top: 1rem;
+        height: calc(100vh - 1rem);
+
+
+        &__content {
+            max-width: 30rem;
+        }
+    }
+
+
+    ////////////// Partners Section
+
+    .partners {
+        margin-top: -4rem;
+        max-width: 75rem;
+        margin-left: auto; 
+   
+
+        .container {
+            width: 100%;
+
+        }
+        
+        &__content {
+            --gap: 2rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-block: 2rem;
+        }
+    }
+
+
+    /////////////////// Reviews Section
+
+    .reviews__heading {
+
+
+        p:last-of-type {
+            max-width: 30rem;
+        }
+    }
+
+    .reviews__content {
+        grid-template-columns: repeat(2, 1fr );
+        align-items: center;
+        justify-content: space-between;
+
+        &_show {
+            justify-self: end;
+        }
+    }
+
+
+    .reviews__box-list {
+        --gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+
+        & > div {
+            width: 48%;
+        }
+    }
+
+    //////////// CTA section
+
+    .cta__content {
+        grid-template-columns: repeat(2, 1fr );
+        align-items: center;
+        position: relative;
+
+        &_copy {
+            max-width: 25rem;
+            justify-self: center;
+        }
+    }
+
+    .cta__content_float {
+        position: absolute;
+        top: 18.75em;
+        left: 11em;
+    }
+
+
+
+    //////////// Mission section
+
+
+
+    .mission__content {
+        grid-template-columns: repeat(2, 1fr );
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mission__content_copy  {
+       justify-self: center;
+       max-width: 30rem;
+
+        
+    }
+
+
+    .mission__img {
+        justify-self: end;
+
+        img {
+            width: 40rem;
+        }
+    }
+
+
+
+    
+.cta__second p {
+
+    max-width: 55rem;
+    margin-inline: auto;
+
+}
+
+
+///////////////// Product Reviews Section
+
+.product-reviews__list {
+    --gap: 2rem;
+   
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.product-reviews__box {
+    max-width: 25rem;
+}
+
+
+///////////////// Footer Section
+
+
+
+.main-footer__content {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    .col {
+        width: 45%;
+        // flex: 1;
+    }
+
+}
+
+
+
+}
+
+
+
+@media(min-width: 62em) {
+
+
+    .reviews__box-list {
+        --gap: 1rem;
+        
+
+        & > div {
+            width: 23%;
+        }
+    }
+
+    ///////////////// Product Reviews Section
+
+    .product-reviews__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    ///////////////// Footer Section
+
+
+
+.main-footer__content {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    .col {
+        width: 100%;
+        flex: 1;
+    }
+
+    .col-2 {
+        flex: 1.5;
+    }
+
+    .col-3 {
+        flex: 3;
+    }
+
+    .col-4 {
+        flex: 2;
+        border-left: 1px solid #5D6544;
+        padding-left: 4rem;
+
+    }
+}
+    
+}
